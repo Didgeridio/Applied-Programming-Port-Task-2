@@ -3,12 +3,14 @@ class Letterbox:
         self.owner = owner
         self.contains_letter = False
         self.letters = []
+
     def add_letter(self, letter):
         if self.contains_letter == False:
             self.letters.append(letter)
-            print("The letter has been put into the letterbox!")
+            print("The letter has been posted into the letterbox!")
             self.contains_letter = True
-    def empty_letterbox(self):
+
+    def empty_letters(self):
         self.letters = []
         self.contains_letter = False
-        print("The letterbox has been emptied.")
+        print("The letterbox is now empty.")
